@@ -1,0 +1,1818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropheat</title>
+    <link rel="stylesheet" href="./app/css/utility.css" />
+    <link rel="stylesheet" href="./app/css/style.css" />
+    <link rel="stylesheet" href="./app/css/responsive.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="wrapper">
+          <div class="area area-left">
+            <a href="#" class="logo">
+              <img src="./assets/icons/logo.svg" alt="Dropheat" />
+            </a>
+            <ul class="navigations" id="navigations">
+              <li>
+                <a href="#">
+                  <img src="./assets/icons/home.svg" alt="" />Home
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/icons/treasure.svg" alt="" />Boxes
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/icons/swords.svg" alt="" />Battles
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/icons/crown.svg" alt="" />VIP Members
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./assets/icons/users.svg" alt="" />Affiliates</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="area area-right">
+            <div class="trigger" id="trigger">
+              <button class="button solid" id="value">
+                <span class="selected"
+                  ><img src="./assets/icons/en-us.svg" alt="" /> EN</span
+                >
+                <img src="./assets/icons/chevron-down.svg" alt="" />
+              </button>
+              <div class="options" id="options">
+                <button class="option">
+                  <img src="./assets/icons/en-us.svg" alt="" /> EN
+                </button>
+              </div>
+            </div>
+            <div class="trigger" id="trigger">
+              <button class="button solid" id="value">
+                <span class="selected">
+                  <img src="./assets/icons/coin.svg" alt="" /> USD
+                </span>
+                <img src="./assets/icons/chevron-down.svg" alt="" />
+              </button>
+              <div class="options" id="options">
+                <button class="option">
+                  <img src="./assets/icons/coin.svg" alt="" /> USD
+                </button>
+                <button class="option">
+                  <img src="./assets/icons/coin.svg" alt="" /> INR
+                </button>
+              </div>
+            </div>
+            <button class="button gradient">Authorization</button>
+            <button
+              class="button solid chat-window-trigger"
+              id="chat-window-trigger"
+            >
+              <img src="./assets/icons/chat.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="layout">
+          <div class="sidebar">
+            <aside>
+              <ul class="menus">
+                <li class="active">
+                  <a href="#">
+                    <img src="./assets/icons/gift-lg.svg" alt="" />
+                  </a>
+                  <span class="label lime">Free</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/icons/home-lg.svg" alt="" />
+                  </a>
+                  <span class="label lime">Home</span>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img src="./assets/icons/treasure-lg.svg" alt="" />
+                  </a>
+                  <span class="label lime">Treasure</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/icons/swords-lg.svg" alt="" />
+                  </a>
+                  <span class="label lime">Battles</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/icons/crown-lg.svg" alt="" />
+                  </a>
+                  <span class="label lime">Winners</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/icons/users-lg.svg" alt="" />
+                  </a>
+                  <span class="label lime">Users</span>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="./assets/icons/speaker-lg.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/icons/envelope-lg.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/icons/help-lg.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/icons/document-lg.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="social-handles">
+                <li>
+                  <a href="#" target="_blank">
+                    <img src="./assets/icons/twitter.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img src="./assets/icons/instagram.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img src="./assets/icons/tiktok.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img src="./assets/icons/youtube.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+          <div class="content-area">
+            <div>
+              <section class="live-drops" id="live-drops">
+                <div class="title">
+                  <img src="./assets/icons/indicator.svg" alt="" />
+                  <p>Live drops</p>
+                </div>
+                <div class="drops-wrapper">
+                  <ul>
+                    <li class="drop" data-variant="lime">
+                      <div class="image-box">
+                        <div class="image">
+                          <img src="./assets/drops/xbox-game-pass.png" alt="" />
+                        </div>
+                        <div class="info">
+                          <h4>$10.<span>00</span></h4>
+                          <p>
+                            <img src="./assets/drops/face.png" alt="" /><span
+                              >MsGreedy</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="drop" data-variant="pink">
+                      <div class="image-box">
+                        <div class="image">
+                          <img src="./assets/drops/hd.png" alt="" />
+                        </div>
+                        <div class="info">
+                          <h4>$289.<span>00</span></h4>
+                          <p>
+                            <img src="./assets/drops/face.png" alt="" /><span
+                              >MsGreedy</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="drop" data-variant="sky">
+                      <div class="image-box">
+                        <div class="image">
+                          <img src="./assets/drops/cup.png" alt="" />
+                        </div>
+                        <div class="info">
+                          <h4>$110.<span>00</span></h4>
+                          <p>
+                            <img src="./assets/drops/face.png" alt="" /><span
+                              >MsGreedy</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="drop" data-variant="gray">
+                      <div class="image-box">
+                        <div class="image">
+                          <img src="./assets/drops/parachute.png" alt="" />
+                        </div>
+                        <div class="info">
+                          <h4>$5.<span>00</span></h4>
+                          <p>
+                            <img src="./assets/drops/face.png" alt="" /><span
+                              >MsGreedy</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="drop" data-variant="pink">
+                      <div class="image-box">
+                        <div class="image">
+                          <img src="./assets/drops/parachute.png" alt="" />
+                        </div>
+                        <div class="info">
+                          <h4>$289.<span>00</span></h4>
+                          <p>
+                            <img src="./assets/drops/face.png" alt="" /><span
+                              >MsGreedy</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="drop" data-variant="sky">
+                      <div class="image-box">
+                        <div class="image">
+                          <img src="./assets/drops/toys.png" alt="" />
+                        </div>
+                        <div class="info">
+                          <h4>$124.<span>05</span></h4>
+                          <p>
+                            <img src="./assets/drops/face.png" alt="" /><span
+                              >MsGreedy</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="drop" data-variant="gray">
+                      <div class="image-box">
+                        <div class="image">
+                          <img src="./assets/drops/hd.png" alt="" />
+                        </div>
+                        <div class="info">
+                          <h4>$9</h4>
+                          <p>
+                            <img src="./assets/drops/face.png" alt="" /><span
+                              >MsGreedy</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="drop" data-variant="gray">
+                      <div class="image-box">
+                        <div class="image">
+                          <img src="./assets/drops/hd.png" alt="" />
+                        </div>
+                        <div class="info">
+                          <h4>$7</h4>
+                          <p>
+                            <img src="./assets/drops/face.png" alt="" /><span
+                              >MsGreedy</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="drop" data-variant="gray">
+                      <div class="image-box">
+                        <div class="image">
+                          <img src="./assets/drops/hd.png" alt="" />
+                        </div>
+                        <div class="info">
+                          <h4>$5</h4>
+                          <p>
+                            <img src="./assets/drops/face.png" alt="" /><span
+                              >MsGreedy</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+              <!-- Hero Section -->
+              <section class="hero" id="hero">
+                <div class="wrapper">
+                  <div class="left">
+                    <div class="contents">
+                      <h1>Sign Up today <br />and claim your FREE box</h1>
+                      <p>
+                        Unlock YOUR Free Box Today! Each box is a treasure trove
+                        of excitement waiting to be discovered. Don't miss out –
+                        dive into the unknown with us!
+                      </p>
+                      <button class="button gradient">Claim now</button>
+                    </div>
+                    <div class="image">
+                      <img src="./assets/images/watches.png" alt="" />
+                      <span class="label gray">Free</span>
+                      <span class="label lime">Free</span>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="contents">
+                      <h2>Earn up to 10% on deposits from your friends</h2>
+                      <p>
+                        Give your friends a 5% bonus<br />
+                        added to all their cash deposits
+                      </p>
+                    </div>
+                    <div class="image">
+                      <img src="./assets/images/refer.png" alt="" />
+                      <button class="button refer">Refer a friend</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Featured Boxes -->
+              <section class="section featured-boxes" id="featured-boxes">
+                <div class="featured-boxes-header">
+                  <div class="title">
+                    <img src="./assets/icons/treasure-chest.svg" alt="" />
+                    <h2>Featured Boxes</h2>
+                  </div>
+                  <div class="tabs" id="tabs">
+                    <button class="tab active" data-name="featured">
+                      Featured
+                    </button>
+                    <button class="tab" data-name="new-boxes">New Boxes</button>
+                    <button class="tab" data-name="top-boxes">Top Boxes</button>
+                  </div>
+                  <div class="sorting">
+                    <span>Sort by:</span>
+                    <select name="sort" id="sort">
+                      <option value="price" selected>Price</option>
+                      <option value="price">Name</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="tab-panels" id="tab-panels">
+                  <div class="panel panel-featured active">
+                    <div class="boxes-wrapper">
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-1.png" alt="" />
+                            <div class="categories">
+                              <span class="cat new">New</span>
+                              <span class="cat hot">Hot</span>
+                              <span class="cat popular">Popular</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Crazy Designers</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$390.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open case</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-2.png" alt="" />
+                            <div class="categories">
+                              <span class="cat popular">Popular</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-3.png" alt="" />
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-4.png" alt="" />
+                            <div class="categories">
+                              <span class="cat hot">Hot</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-5.png" alt="" />
+                            <div class="categories">
+                              <span class="cat new">New</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-1.png" alt="" />
+                            <div class="categories">
+                              <span class="cat new">New</span>
+                              <span class="cat hot">Hot</span>
+                              <span class="cat popular">Popular</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Crazy Designers</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$390.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open case</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-2.png" alt="" />
+                            <div class="categories">
+                              <span class="cat popular">Popular</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-3.png" alt="" />
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-4.png" alt="" />
+                            <div class="categories">
+                              <span class="cat hot">Hot</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-5.png" alt="" />
+                            <div class="categories">
+                              <span class="cat new">New</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="panel panel-new-boxes">
+                    <div class="boxes-wrapper">
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-1.png" alt="" />
+                            <div class="categories">
+                              <span class="cat new">New</span>
+                              <span class="cat hot">Hot</span>
+                              <span class="cat popular">Popular</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Crazy Designers</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$390.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open case</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-2.png" alt="" />
+                            <div class="categories">
+                              <span class="cat popular">Popular</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-3.png" alt="" />
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-4.png" alt="" />
+                            <div class="categories">
+                              <span class="cat hot">Hot</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-5.png" alt="" />
+                            <div class="categories">
+                              <span class="cat new">New</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-1.png" alt="" />
+                            <div class="categories">
+                              <span class="cat new">New</span>
+                              <span class="cat hot">Hot</span>
+                              <span class="cat popular">Popular</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Crazy Designers</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$390.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open case</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-2.png" alt="" />
+                            <div class="categories">
+                              <span class="cat popular">Popular</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-3.png" alt="" />
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-4.png" alt="" />
+                            <div class="categories">
+                              <span class="cat hot">Hot</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-5.png" alt="" />
+                            <div class="categories">
+                              <span class="cat new">New</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="panel panel-top-boxes">
+                    <div class="boxes-wrapper">
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-1.png" alt="" />
+                            <div class="categories">
+                              <span class="cat new">New</span>
+                              <span class="cat hot">Hot</span>
+                              <span class="cat popular">Popular</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Crazy Designers</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$390.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open case</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-2.png" alt="" />
+                            <div class="categories">
+                              <span class="cat popular">Popular</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-3.png" alt="" />
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-4.png" alt="" />
+                            <div class="categories">
+                              <span class="cat hot">Hot</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-5.png" alt="" />
+                            <div class="categories">
+                              <span class="cat new">New</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-1.png" alt="" />
+                            <div class="categories">
+                              <span class="cat new">New</span>
+                              <span class="cat hot">Hot</span>
+                              <span class="cat popular">Popular</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Crazy Designers</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$390.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open case</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-2.png" alt="" />
+                            <div class="categories">
+                              <span class="cat popular">Popular</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-3.png" alt="" />
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-4.png" alt="" />
+                            <div class="categories">
+                              <span class="cat hot">Hot</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="box">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./assets/boxes/box-5.png" alt="" />
+                            <div class="categories">
+                              <span class="cat new">New</span>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h2 class="name">Card Trader</h2>
+                            <div class="tags">
+                              <span class="tag">Streetwear</span>
+                              <span class="tag">Watches</span>
+                            </div>
+                            <h2 class="price">$50.<span>00</span></h2>
+                            <div class="buttons">
+                              <button class="button gradient">Open Box</button>
+                              <button class="button transparent">Info</button>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Latest Battles -->
+              <section class="section latest-battles" id="latest-battles">
+                <div class="latest-battles-boxes-header">
+                  <div class="title">
+                    <img src="./assets/icons/fencing.svg" alt="" />
+                    <h2>Latest Battles</h2>
+                    <button class="button transparent">View All</button>
+                  </div>
+                </div>
+
+                <div class="battle">
+                  <div class="participants">
+                    <div class="wrapper">
+                      <div class="group">
+                        <img
+                          src="./assets/participants/participant-1.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/participants/participant-2.png"
+                          alt=""
+                        />
+                      </div>
+                      <img
+                        src="./assets/participants/vs.png"
+                        alt=""
+                        class="vs"
+                      />
+                      <div class="opponent-group">
+                        <img
+                          src="./assets/participants/participant-3.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/participants/participant-4.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rewards-container">
+                    <div class="rewards">
+                      <img src="./assets/rewards/reward-1.png" alt="" />
+                      <img src="./assets/rewards/reward-2.png" alt="" />
+                      <img src="./assets/rewards/reward-3.png" alt="" />
+                      <img src="./assets/rewards/reward-4.png" alt="" />
+                      <img src="./assets/rewards/reward-5.png" alt="" />
+                      <img src="./assets/rewards/reward-6.png" alt="" />
+                      <img src="./assets/rewards/reward-7.png" alt="" />
+                      <img src="./assets/rewards/reward-7.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <h2 class="price">$390.<span>00</span></h2>
+                    <button class="button gradient">Open case</button>
+                  </div>
+                </div>
+                <div class="battle">
+                  <div class="participants">
+                    <div class="wrapper">
+                      <div class="group">
+                        <img
+                          src="./assets/participants/participant-5.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/participants/participant-6.png"
+                          alt=""
+                        />
+                      </div>
+                      <img
+                        src="./assets/participants/vs.png"
+                        alt=""
+                        class="vs"
+                      />
+                      <div class="opponent-group">
+                        <img
+                          src="./assets/participants/participant-7.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/participants/participant-8.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rewards-container">
+                    <div class="rewards">
+                      <img src="./assets/rewards/reward-8.png" alt="" />
+                      <img src="./assets/rewards/reward-9.png" alt="" />
+                      <img src="./assets/rewards/reward-10.png" alt="" />
+                      <img src="./assets/rewards/reward-11.png" alt="" />
+                      <img src="./assets/rewards/reward-12.png" alt="" />
+                      <img src="./assets/rewards/reward-13.png" alt="" />
+                      <img src="./assets/rewards/reward-14.png" alt="" />
+                      <img src="./assets/rewards/reward-15.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <h2 class="price">$390.<span>00</span></h2>
+                    <button class="button gradient">Open case</button>
+                  </div>
+                </div>
+                <div class="battle">
+                  <div class="participants">
+                    <div class="wrapper">
+                      <div class="group">
+                        <img
+                          src="./assets/participants/participant-9.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/participants/participant-10.png"
+                          alt=""
+                        />
+                      </div>
+                      <img
+                        src="./assets/participants/vs.png"
+                        alt=""
+                        class="vs"
+                      />
+                      <div class="opponent-group">
+                        <img
+                          src="./assets/participants/participant-11.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/participants/participant-12.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rewards-container">
+                    <div class="rewards">
+                      <img src="./assets/rewards/reward-16.png" alt="" />
+                      <img src="./assets/rewards/reward-2.png" alt="" />
+                      <img src="./assets/rewards/reward-17.png" alt="" />
+                      <img src="./assets/rewards/reward-4.png" alt="" />
+                      <img src="./assets/rewards/reward-9.png" alt="" />
+                      <img src="./assets/rewards/reward-18.png" alt="" />
+                      <img src="./assets/rewards/reward-19.png" alt="" />
+                      <img src="./assets/rewards/reward-7.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <h2 class="price">$390.<span>00</span></h2>
+                    <button class="button gradient">Open case</button>
+                  </div>
+                </div>
+                <div class="battle">
+                  <div class="participants">
+                    <div class="wrapper">
+                      <div class="group">
+                        <img
+                          src="./assets/participants/participant-13.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/participants/participant-14.png"
+                          alt=""
+                        />
+                      </div>
+                      <img
+                        src="./assets/participants/vs.png"
+                        alt=""
+                        class="vs"
+                      />
+                      <div class="opponent-group">
+                        <img
+                          src="./assets/participants/participant-15.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/participants/participant-16.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rewards-container">
+                    <div class="rewards">
+                      <img src="./assets/rewards/reward-6.png" alt="" />
+                      <img src="./assets/rewards/reward-18.png" alt="" />
+                      <img src="./assets/rewards/reward-6.png" alt="" />
+                      <img src="./assets/rewards/reward-4.png" alt="" />
+                      <img src="./assets/rewards/reward-5.png" alt="" />
+                      <img src="./assets/rewards/reward-10.png" alt="" />
+                      <img src="./assets/rewards/reward-9.png" alt="" />
+                      <img src="./assets/rewards/reward-7.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <h2 class="price">$390.<span>00</span></h2>
+                    <button class="button gradient">Open case</button>
+                  </div>
+                </div>
+                <div class="battle">
+                  <div class="participants">
+                    <div class="wrapper">
+                      <div class="group">
+                        <img
+                          src="./assets/participants/participant-17.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/participants/participant-18.png"
+                          alt=""
+                        />
+                      </div>
+                      <img
+                        src="./assets/participants/vs.png"
+                        alt=""
+                        class="vs"
+                      />
+                      <div class="opponent-group">
+                        <img
+                          src="./assets/participants/participant-19.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/participants/participant-20.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rewards-container">
+                    <div class="rewards">
+                      <img src="./assets/rewards/reward-20.png" alt="" />
+                      <img src="./assets/rewards/reward-2.png" alt="" />
+                      <img src="./assets/rewards/reward-9.png" alt="" />
+                      <img src="./assets/rewards/reward-10.png" alt="" />
+                      <img src="./assets/rewards/reward-20.png" alt="" />
+                      <img src="./assets/rewards/reward-16.png" alt="" />
+                      <img src="./assets/rewards/reward-7.png" alt="" />
+                      <img src="./assets/rewards/reward-19.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <h2 class="price">$390.<span>00</span></h2>
+                    <button class="button gradient">Open case</button>
+                  </div>
+                </div>
+                <div class="battle">
+                  <div class="participants">
+                    <div class="wrapper">
+                      <div class="group">
+                        <img
+                          src="./assets/participants/participant-21.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/participants/participant-22.png"
+                          alt=""
+                        />
+                      </div>
+                      <img
+                        src="./assets/participants/vs.png"
+                        alt=""
+                        class="vs"
+                      />
+                      <div class="opponent-group">
+                        <img
+                          src="./assets/participants/participant-23.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/participants/participant-24.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rewards-container">
+                    <div class="rewards">
+                      <img src="./assets/rewards/reward-6.png" alt="" />
+                      <img src="./assets/rewards/reward-19.png" alt="" />
+                      <img src="./assets/rewards/reward-16.png" alt="" />
+                      <img src="./assets/rewards/reward-10.png" alt="" />
+                      <img src="./assets/rewards/reward-5.png" alt="" />
+                      <img src="./assets/rewards/reward-6.png" alt="" />
+                      <img src="./assets/rewards/reward-9.png" alt="" />
+                      <img src="./assets/rewards/reward-20.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <h2 class="price">$390.<span>00</span></h2>
+                    <button class="button gradient">Open case</button>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Fresh Deliveries -->
+              <section class="section fresh-deliveries" id="fresh-deliveries">
+                <div class="fresh-deliveries-header">
+                  <div class="title">
+                    <img src="./assets/icons/delivery.svg" alt="" />
+                    <h2>Fresh Deliveries</h2>
+                  </div>
+                  <p class="caption">
+                    Check out some of the hottest unboxings from our community!
+                    To appear on our page, <br />tag us on Twitter when your
+                    item arrives.
+                  </p>
+                </div>
+
+                <div class="testimonials-wrapper">
+                  <div class="testimonial">
+                    <article>
+                      <div class="image-box">
+                        <div class="image">
+                          <img src="./assets/testimonials/user-1.png" alt="" />
+                        </div>
+                        <div class="info">
+                          <h2 class="name">Andr Grown</h2>
+                          <p class="username">@users9384</p>
+                        </div>
+                        <div class="posted-on">
+                          <p>3 hours ago</p>
+                        </div>
+                      </div>
+                      <div class="contents">
+                        <h2>Best serivce I ever used</h2>
+                        <p>
+                          It finally arrived. TY <a href="#">@HypeDrop</a> Lemme
+                          know which case I should open to honor this moment
+                        </p>
+                        <div class="images">
+                          <img
+                            src="./assets/testimonials/user-1-testimonial-img-1.png"
+                            alt=""
+                          />
+                          <img
+                            src="./assets/testimonials/user-1-testimonial-img-2.png"
+                            alt=""
+                          />
+                          <img
+                            src="./assets/testimonials/user-1-testimonial-img-3.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="ratings">
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="testimonial">
+                    <article>
+                      <div class="image-box">
+                        <div class="image">
+                          <img src="./assets/testimonials/user-2.png" alt="" />
+                        </div>
+                        <div class="info">
+                          <h2 class="name">Andr Grown</h2>
+                          <p class="username">@users9384</p>
+                        </div>
+                        <div class="posted-on">
+                          <p>3 hours ago</p>
+                        </div>
+                      </div>
+                      <div class="contents">
+                        <h2>Best serivce I ever used</h2>
+                        <p>
+                          It finally arrived. TY <a href="#">@HypeDrop</a> Lemme
+                          know which case I should open to honor this moment
+                        </p>
+                        <div class="images">
+                          <img
+                            src="./assets/testimonials/user-2-testimonial-img-1.png"
+                            alt=""
+                          />
+                          <img
+                            src="./assets/testimonials/user-2-testimonial-img-2.png"
+                            alt=""
+                          />
+                          <img
+                            src="./assets/testimonials/user-2-testimonial-img-3.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="ratings">
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="testimonial">
+                    <article>
+                      <div class="image-box">
+                        <div class="image">
+                          <img src="./assets/testimonials/user-3.png" alt="" />
+                        </div>
+                        <div class="info">
+                          <h2 class="name">Andr Grown</h2>
+                          <p class="username">@users9384</p>
+                        </div>
+                        <div class="posted-on">
+                          <p>3 hours ago</p>
+                        </div>
+                      </div>
+                      <div class="contents">
+                        <h2>Best serivce I ever used</h2>
+                        <p>
+                          It finally arrived. TY <a href="#">@HypeDrop</a> Lemme
+                          know which case I should open to honor this moment
+                        </p>
+                        <div class="images">
+                          <img
+                            src="./assets/testimonials/user-3-testimonial-img-1.png"
+                            alt=""
+                          />
+                          <img
+                            src="./assets/testimonials/user-3-testimonial-img-2.png"
+                            alt=""
+                          />
+                          <img
+                            src="./assets/testimonials/user-3-testimonial-img-3.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="ratings">
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="testimonial">
+                    <article>
+                      <div class="image-box">
+                        <div class="image">
+                          <img src="./assets/testimonials/user-4.png" alt="" />
+                        </div>
+                        <div class="info">
+                          <h2 class="name">Andr Grown</h2>
+                          <p class="username">@users9384</p>
+                        </div>
+                        <div class="posted-on">
+                          <p>3 hours ago</p>
+                        </div>
+                      </div>
+                      <div class="contents">
+                        <h2>Best serivce I ever used</h2>
+                        <p>
+                          It finally arrived. TY <a href="#">@HypeDrop</a> Lemme
+                          know which case I should open to honor this moment
+                        </p>
+                        <div class="images">
+                          <img
+                            src="./assets/testimonials/user-4-testimonial-img-1.png"
+                            alt=""
+                          />
+                          <img
+                            src="./assets/testimonials/user-4-testimonial-img-2.png"
+                            alt=""
+                          />
+                          <img
+                            src="./assets/testimonials/user-4-testimonial-img-3.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="ratings">
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                          <img src="./assets/testimonials/star.svg" alt="" />
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Footer -->
+                <footer class="footer" id="footer">
+                    <div class="ratings">
+                        <img src="./assets/icons/star-fill.svg" alt="">
+                        <img src="./assets/icons/star-fill.svg" alt="">
+                        <img src="./assets/icons/star-fill.svg" alt="">
+                        <img src="./assets/icons/star-fill.svg" alt="">
+                        <img src="./assets/icons/star-fill.svg" alt="">
+                    </div>
+
+                    <div class="links">
+                        <a href="#">AML Policy</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Terms Of Service</a>
+                        <a href="#">Blog</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Provably Fair</a>
+                        <a href="#">Privacy Statement</a>
+                    </div>
+
+                    <div class="social-handles">
+                        <a href="#" target="_blank">
+                            <img src="./assets/social/twitter.svg" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="./assets/social/instagram.svg" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="./assets/social/tiktok.svg" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="./assets/social/youtube.svg" alt="">
+                        </a>
+                    </div>
+                </footer>
+            </div>
+          </div>
+          <div class="chat-window">
+            <div class="chat-window-header">
+              <div class="chat-window-title">
+                <img src="./assets/icons/message.svg" alt="" />
+                <p>Chat</p>
+              </div>
+              <div class="group">
+                <span class="message-counts">
+                  <img src="./assets/icons/indicator.svg" alt="" />
+                  <p>12,490</p>
+                </span>
+                <button class="button">
+                  <img src="./assets/icons/chevron-right.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="messages">
+              <ul>
+                <li class="icon-box">
+                  <div class="avatar">
+                    <img src="./assets/avatars/avatar_1.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="group">
+                      <h5 class="name">coolmate</h5>
+                      <h5 class="time">10:12</h5>
+                    </div>
+                    <div class="message">
+                      <p>
+                        its been an hour window since it sarted they just always
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="icon-box">
+                  <div class="avatar">
+                    <img src="./assets/avatars/avatar_1.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="group">
+                      <h5 class="name">coolmate</h5>
+                      <h5 class="time">10:13</h5>
+                    </div>
+                    <div class="message">
+                      <p>Hello all friends</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="icon-box">
+                  <div class="avatar">
+                    <img src="./assets/avatars/avatar_2.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="group">
+                      <h5 class="name">coolmate</h5>
+                      <h5 class="time">10:13</h5>
+                    </div>
+                    <div class="message">
+                      <p>its all time waiting and show now low 😒</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="icon-box">
+                  <div class="avatar">
+                    <img src="./assets/avatars/avatar_3.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="group">
+                      <h5 class="name">coolmate</h5>
+                      <h5 class="time">10:13</h5>
+                    </div>
+                    <div class="message">
+                      <p>
+                        Please provide camera access through your browser or
+                        device settings. Click "Allow" when prompted, or adjust
+                        settings accordingly.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="icon-box">
+                  <div class="avatar">
+                    <img src="./assets/avatars/avatar_4.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="group">
+                      <h5 class="name">HATEfriends</h5>
+                      <h5 class="time">10:13</h5>
+                    </div>
+                    <div class="message">
+                      <p>Good luck everybody 🍀</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="icon-box">
+                  <div class="avatar">
+                    <img src="./assets/avatars/avatar_5.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="group">
+                      <h5 class="name">coolmate</h5>
+                      <h5 class="time">10:13</h5>
+                    </div>
+                    <div class="message">
+                      <p>Hello all friends</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="icon-box">
+                  <div class="avatar">
+                    <img src="./assets/avatars/avatar_6.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="group">
+                      <h5 class="name">coolmate</h5>
+                      <h5 class="time">10:13</h5>
+                    </div>
+                    <div class="message">
+                      <p>how you been mate? It’s been a while</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="icon-box">
+                  <div class="avatar">
+                    <img src="./assets/avatars/avatar_7.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="group">
+                      <h5 class="name">coolmate</h5>
+                      <h5 class="time">10:13</h5>
+                    </div>
+                    <div class="message">
+                      <p>Ooooooffff</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="icon-box">
+                  <div class="avatar">
+                    <img src="./assets/avatars/avatar_8.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="group">
+                      <h5 class="name">coolmate</h5>
+                      <h5 class="time">10:13</h5>
+                    </div>
+                    <div class="message">
+                      <p>errr how did i move to sports</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="icon-box">
+                  <div class="avatar">
+                    <img src="./assets/avatars/avatar_9.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="group">
+                      <h5 class="name">coolmate</h5>
+                      <h5 class="time">10:13</h5>
+                    </div>
+                    <div class="message">
+                      <p>Hello all friends</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="icon-box">
+                  <div class="avatar">
+                    <img src="./assets/avatars/avatar_10.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="group">
+                      <h5 class="name">coolmate</h5>
+                      <h5 class="time">10:13</h5>
+                    </div>
+                    <div class="message">
+                      <p>they moved the start times for fd back 30 min</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="icon-box">
+                  <div class="avatar">
+                    <img src="./assets/avatars/avatar_11.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="group">
+                      <h5 class="name">coolmate</h5>
+                      <h5 class="time">10:13</h5>
+                    </div>
+                    <div class="message">
+                      <p>
+                        thought the mod had gone mad asking not to share casino
+                        bets lol
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="icon-box">
+                  <div class="avatar">
+                    <img src="./assets/avatars/avatar_12.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="group">
+                      <h5 class="name">coolmate</h5>
+                      <h5 class="time">10:13</h5>
+                    </div>
+                    <div class="message">
+                      <p>
+                        thought the mod had gone mad asking not to share casino
+                        bets lol
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="chat-window-footer">
+              <div class="typing-area">
+                <div>
+                  <input
+                    type="text"
+                    name="message"
+                    id="message"
+                    placeholder="Enter your message"
+                  />
+                  <button class="emoji-picker" id="emojiButton">
+                    <img src="./assets/icons/smiley.svg" alt="" />
+                  </button>
+                </div>
+                <button class="button gradient send">
+                  <img src="./assets/icons/send.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="smoke" id="smoke"></div>
+    <script src="./app/js/app.js" defer></script>
+  </body>
+</html>
