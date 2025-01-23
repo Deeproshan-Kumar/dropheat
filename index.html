@@ -54,7 +54,7 @@
             </ul>
           </div>
           <div class="area area-right">
-            <div class="trigger lang" id="trigger">
+            <div class="trigger lang" id="lang-trigger">
               <button class="button solid" id="value">
                 <span class="selected"
                   ><img src="./assets/icons/en-us.svg" alt="" /> EN</span
@@ -62,12 +62,15 @@
                 <img src="./assets/icons/chevron-down.svg" alt="" />
               </button>
               <div class="options" id="options">
-                <button class="option">
+                <button class="option" data-option="EN">
                   <img src="./assets/icons/en-us.svg" alt="" /> EN
                 </button>
+                <button class="option" data-option="HI">
+                    <img src="./assets/icons/en-us.svg" alt="" /> HI
+                  </button>
               </div>
             </div>
-            <div class="trigger currency" id="trigger">
+            <div class="trigger currency" id="currency-trigger">
               <button class="button solid" id="value">
                 <span class="selected">
                   <img src="./assets/icons/coin.svg" alt="" /> USD
@@ -75,10 +78,10 @@
                 <img src="./assets/icons/chevron-down.svg" alt="" />
               </button>
               <div class="options" id="options">
-                <button class="option">
+                <button class="option" data-option="USD">
                   <img src="./assets/icons/coin.svg" alt="" /> USD
                 </button>
-                <button class="option">
+                <button class="option" data-option="INR">
                   <img src="./assets/icons/coin.svg" alt="" /> INR
                 </button>
               </div>

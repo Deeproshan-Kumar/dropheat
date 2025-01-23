@@ -26,6 +26,18 @@ document.addEventListener("DOMContentLoaded", () => {
       // Prevent click event from propagating to the document click listener
       event.stopPropagation();
     });
+
+    // Handle clicks on the individual options
+    const optionButtons = options.querySelectorAll(".option");
+    optionButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const selectedOptionHTML = button.innerHTML;
+        // Update the selected span with the new option
+        const selectedSpan = trigger.querySelector(".selected");
+        selectedSpan.innerHTML = selectedOptionHTML;
+        setTimeout(() => options.classList.remove("show"));
+      });
+    });
   });
 
   // Close dropdown if clicking outside of any trigger or options
