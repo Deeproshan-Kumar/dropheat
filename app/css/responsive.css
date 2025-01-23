@@ -188,6 +188,11 @@
     position: fixed;
     top: 7.2rem;
     right: 0;
+    transform: translateX(100%);
+  }
+
+  .chat-window-active .chat-window {
+    transform: translateX(0);
   }
 
   .typing-area input {

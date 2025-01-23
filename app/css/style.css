@@ -238,6 +238,8 @@
 /* Live Drops */
 .live-drops {
   background: #16161b;
+  border-radius: 0.8rem;
+  margin-bottom: 0.9rem;
 }
 
 .live-drops .title {
@@ -261,7 +263,6 @@
   display: flex;
   flex-wrap: nowrap;
   gap: 0.6rem;
-  margin-bottom: 0.9rem;
 }
 
 .live-drops .drop {
