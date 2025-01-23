@@ -3,6 +3,7 @@
   width: 100%;
   margin: 0 auto;
   padding-top: 7.2rem;
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -222,10 +223,16 @@
 }
 
 .content-area {
-  max-width: calc(100% - 42rem);
+  min-width: calc(100% - 42rem);
   width: 100%;
   padding-top: 1.2rem;
   padding-inline: 1.2rem;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 500ms;
+}
+
+.chat-window-active .content-area {
+  min-width: calc(100% - 9rem);
 }
 
 /* Live Drops */
@@ -377,13 +384,12 @@
 }
 
 .hero .wrapper::-webkit-scrollbar {
-    height: 0;
-    width: 0;
+  height: 0;
+  width: 0;
 }
 
 .hero .wrapper .left {
   position: relative;
-
   display: flex;
   align-items: center;
   background: url("../../assets/images/globe.png"),
@@ -391,6 +397,10 @@
   background-repeat: no-repeat;
   background-position: bottom right;
   border-radius: 1.6rem;
+}
+
+.chat-window-active .hero .wrapper .left {
+  width: 75%;
 }
 
 .hero .wrapper .left .contents {
@@ -492,6 +502,11 @@
   border-radius: 1.6rem;
 }
 
+.chat-window-active .hero .wrapper .right {
+  max-width: unset;
+  width: 25%;
+}
+
 .hero .wrapper .right .contents {
   max-width: 28rem;
   padding: 2.4rem;
@@ -534,7 +549,7 @@
 }
 
 .hero .wrapper .right .image img {
-    width: 100%;
+  width: 100%;
 }
 
 .hero .wrapper .right .image .refer {
@@ -770,6 +785,7 @@
 
 .boxes-wrapper .card .card-body .button.transparent {
   width: 30%;
+  background: #363640;
 }
 
 /* Latest Battles */
@@ -1080,12 +1096,18 @@
 /* Chat Window */
 .chat-window {
   position: sticky;
-  top: 7.2rem;
+  top: 0;
   height: calc(100vh - 7.2rem);
   max-width: 33rem;
   width: 100%;
   background: #16161b;
+  transform: translateX(0);
   transition: 300ms all ease-in-out;
+  z-index: 5;
+}
+
+.chat-window-active .chat-window {
+  transform: translateX(33rem);
 }
 
 .chat-window-header {
@@ -1190,12 +1212,12 @@
 
 .typing-area div {
   display: flex;
-  flex: 1;
+  width: calc(100% - 4.8rem);
   background: #29292f;
 }
 
 .typing-area input {
-  flex: 1;
+  width: calc(100% - 4.8rem);
   background: #29292f;
   border: 0;
   outline: 0;
@@ -1214,11 +1236,11 @@
 }
 
 .typing-area .emoji-picker img {
-    transition: 300ms all ease-in-out;
+  transition: 300ms all ease-in-out;
 }
 
 .typing-area .emoji-picker:hover img {
-    filter: brightness(3);
+  filter: brightness(3);
 }
 
 .typing-area .emoji-picker,

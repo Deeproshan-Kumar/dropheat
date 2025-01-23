@@ -188,17 +188,8 @@
     max-width: calc(100% - 9rem);
   }
 
-  .chat-window {
-    position: fixed;
-    right: 0;
-    transform: translateY(-100vh);
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-duration: 1s;
-    z-index: 5;
-  }
-
-  .chat-window-active .chat-window {
-    transform: translateY(0);
+  .typing-area input {
+    padding: 1rem;
   }
 
   .footer {
@@ -271,11 +262,19 @@
   }
 
   .chat-window {
+    position: fixed;
+    right: 0;
     top: 5.4rem;
     height: calc(100vh - 5.4rem);
+    max-width: unset;
+  }
+
+  .chat-window-active .chat-window {
+    box-shadow: none;
   }
 
   .messages {
+    max-height: calc(100vh - 18.9rem);
     padding-top: 2rem;
     padding-inline: 2rem;
   }
