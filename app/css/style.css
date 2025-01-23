@@ -693,6 +693,7 @@
   left: 1.6rem;
   display: flex;
   gap: 0.4rem;
+  z-index: 1;
 }
 
 .boxes-wrapper .card .categories .cat {
@@ -914,6 +915,8 @@
   font-size: 1.6rem;
   font-weight: 600;
   color: #676778;
+  margin-right: 0;
+  margin-left: auto;
   text-align: right;
 }
 

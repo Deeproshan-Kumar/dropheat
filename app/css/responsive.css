@@ -126,21 +126,24 @@
 @media only screen and (max-width: 1024px) {
   .header .navigations {
     position: fixed;
-    top: 0;
+    top: 5.4rem;
     right: 0;
-    height: 100vh;
+    height: auto;
     width: 50%;
+    padding-block: 1rem;
     background: linear-gradient(180deg, #7848ff 0%, #6254ff 100%);
     flex-direction: column;
     justify-content: center;
-    transform: translateX(100%);
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-duration: 1s;
+    gap: 2rem;
+    border-radius: 0.8rem;
+    transform: scaleY(0);
+    transition: 300ms all ease-in-out;
+    transform-origin: top;
     z-index: 999;
   }
 
   .mobile-menu-active .header .navigations {
-    transform: translateX(0);
+    transform: scaleY(1);
   }
 
   .header .ellipsis {
@@ -234,6 +237,10 @@
     max-width: unset;
   }
 
+  .section .title {
+    min-width: 10rem;
+  }
+
   .boxes-wrapper .box {
     width: 50%;
   }
@@ -265,6 +272,12 @@
 
   .chat-window {
     top: 5.4rem;
+    height: calc(100vh - 5.4rem);
+  }
+
+  .messages {
+    padding-top: 2rem;
+    padding-inline: 2rem;
   }
 
   .live-drops .title {
