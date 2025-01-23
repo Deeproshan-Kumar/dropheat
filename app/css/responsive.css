@@ -184,8 +184,10 @@
 }
 
 @media only screen and (max-width: 991px) {
-  .content-area {
-    max-width: calc(100% - 9rem);
+  .chat-window {
+    position: fixed;
+    top: 7.2rem;
+    right: 0;
   }
 
   .typing-area input {
@@ -224,7 +226,12 @@
     display: none;
   }
 
-  .content-area {
+  .content-area,
+  .chat-window-active .content-area {
+    min-width: calc(100% - 0rem);
+  }
+
+  .chat-window {
     max-width: unset;
   }
 
@@ -262,15 +269,8 @@
   }
 
   .chat-window {
-    position: fixed;
-    right: 0;
     top: 5.4rem;
     height: calc(100vh - 5.4rem);
-    max-width: unset;
-  }
-
-  .chat-window-active .chat-window {
-    box-shadow: none;
   }
 
   .messages {

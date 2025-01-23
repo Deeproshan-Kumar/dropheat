@@ -549,6 +549,7 @@
 }
 
 .hero .wrapper .right .image img {
+  max-width: 29rem;
   width: 100%;
 }
 
@@ -1107,7 +1108,7 @@
 }
 
 .chat-window-active .chat-window {
-  transform: translateX(33rem);
+  transform: translateX(100%);
 }
 
 .chat-window-header {
