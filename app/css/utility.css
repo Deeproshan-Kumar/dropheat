@@ -12,14 +12,6 @@
   font-family: "IBM Plex Sans", sans-serif;
 }
 
-:root {
-  --app-bg: #101013;
-  --glass-bg: #222228;
-  --border-clr: #1a1a20;
-  --white: #ffffff;
-  --header-links-clr: #a3a3b7;
-}
-
 html {
   font-size: 62.5%;
 }
@@ -27,10 +19,10 @@ html {
 body {
   min-height: 100vh;
   width: 100%;
-  background: var(--app-bg);
+  background: #101013;
   font-size: 1.5rem;
   font-weight: 500;
-  color: var(--white);
+  color: #ffffff;
   overflow-x: hidden;
 }
 
@@ -58,13 +50,14 @@ h6 {
 button,
 .button {
   height: 4.4rem;
-  background: var(--glass-bg);
-  color: var(--white);
-  border: 0.1rem solid var(--border);
+  background: #16161b;
+  color: #ffffff;
+  border: 0.1rem solid #1a1a20;
   padding: 0 1.4rem;
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
+  white-space: nowrap;
   cursor: pointer;
   transition: 300ms all ease-in-out;
 }

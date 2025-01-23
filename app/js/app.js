@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const triggers = document.querySelectorAll(".trigger"),
     optionsList = document.querySelectorAll(".options"),
+    ellipsis = document.querySelector("#ellipsis"),
     chatWindowTrigger = document.querySelector("#chat-window-trigger"),
     body = document.body,
     tabs = document.querySelectorAll("#tabs .tab"),
@@ -50,6 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
       tab.classList.add("active");
       tabPanels[index].classList.add("active");
     });
+  });
+
+  ellipsis.addEventListener("click", function () {
+    body.classList.toggle("mobile-menu-active");
   });
 
   // Cursor animation

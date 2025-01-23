@@ -11,9 +11,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  border-bottom: 0.15rem solid var(--glass-bg);
+  border-bottom: 0.15rem solid #222228;
   z-index: 999;
-  background: var(--app-bg);
+  background: #101013;
 }
 
 .header .wrapper {
@@ -32,6 +32,10 @@
   padding: 2rem 2.4rem;
 }
 
+.logo .mobile {
+  display: none;
+}
+
 .header .navigations {
   display: flex;
   align-items: center;
@@ -42,7 +46,7 @@
 .header .navigations a {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
-  color: var(--header-links-clr);
+  color: #a3a3b7;
   white-space: nowrap;
   transition: 300ms all ease-in-out;
 }
@@ -92,6 +96,11 @@
 .header .area-right .options button {
   width: 100%;
   text-align: left;
+}
+
+.header .ellipsis {
+  display: none;
+  z-index: 999;
 }
 
 .layout {
@@ -367,7 +376,14 @@
   overflow-x: auto;
 }
 
+.hero .wrapper::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
 .hero .wrapper .left {
+  position: relative;
+
   display: flex;
   align-items: center;
   background: url("../../assets/images/globe.png"),
@@ -385,6 +401,7 @@
 .hero .wrapper .left .contents h1 {
   font-size: 4.4rem;
   font-weight: 700;
+  line-height: 1;
   margin-bottom: 1.4rem;
 }
 
@@ -516,16 +533,21 @@
   align-items: flex-end;
 }
 
+.hero .wrapper .right .image img {
+    width: 100%;
+}
+
 .hero .wrapper .right .image .refer {
   position: absolute;
   left: 4.2rem;
   bottom: 4.2rem;
   background: #39ff88;
+  border: 0.1rem solid #39ff88;
   color: #003114;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
-  padding: 1.4rem 2.4rem;
+  padding: 0 2.4rem;
 }
 
 /* Featured Boxes */
@@ -537,6 +559,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.8rem;
   margin-bottom: 1rem;
 }
 
@@ -549,6 +573,7 @@
 .section .title h2 {
   font-size: 2.4rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .section .title .button {
@@ -637,6 +662,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 5.2rem;
 }
 
 .boxes-wrapper .card .card-image::before {
@@ -655,6 +681,9 @@
 
 .boxes-wrapper .card .card-image img {
   position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
   z-index: 2;
 }
 
@@ -837,6 +866,7 @@
 .battle .rewards img {
   position: relative;
   height: 8.6rem;
+  object-fit: contain;
   scroll-snap-align: center;
   z-index: 1;
 }
@@ -873,11 +903,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
   padding-right: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 .fresh-deliveries-header .caption {
+  max-width: 65rem;
   font-size: 1.6rem;
   font-weight: 600;
   color: #676778;
@@ -1002,6 +1035,7 @@
   padding-left: 1.5rem;
   font-size: 1.5rem;
   font-weight: 500;
+  white-space: nowrap;
   margin-right: 3.2rem;
   transition: 300ms all ease-in-out;
 }
@@ -1018,7 +1052,7 @@
   transform: translateY(-50%);
   height: 0.6rem;
   width: 0.6rem;
-  border-radius: 50%;
+  border-radius: 0.2rem;
   background: #363640;
   transition: 300ms all ease-in-out;
 }
@@ -1077,7 +1111,7 @@
   min-width: 8.2rem;
   display: flex;
   align-items: center;
-  background: var(--glass-bg);
+  background: #222228;
   gap: 0.6rem;
   padding: 0.7rem 0.6rem;
   border-radius: 0.8rem;
@@ -1154,6 +1188,7 @@
 .typing-area div {
   display: flex;
   flex: 1;
+  background: #29292f;
 }
 
 .typing-area input {
@@ -1175,10 +1210,19 @@
   background: #29292f;
 }
 
+.typing-area .emoji-picker img {
+    transition: 300ms all ease-in-out;
+}
+
+.typing-area .emoji-picker:hover img {
+    filter: brightness(3);
+}
+
 .typing-area .emoji-picker,
 .typing-area .button.send {
   height: 4.8rem;
   width: 4.8rem;
+  border: 0;
   padding: 0;
   border-radius: 0;
 }

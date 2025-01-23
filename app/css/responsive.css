@@ -5,6 +5,10 @@
 }
 
 @media only screen and (max-width: 1440px) {
+  .header .navigations {
+    gap: 3rem;
+  }
+
   .boxes-wrapper .box {
     width: 25%;
   }
@@ -13,5 +17,562 @@
 @media only screen and (max-width: 1366px) {
   .boxes-wrapper .box {
     width: 33.33%;
+  }
+
+  .hero .wrapper .left {
+    min-width: 45rem;
+  }
+
+  .hero .wrapper .left .contents {
+    padding: 2.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .hero .wrapper .left .contents p {
+    max-width: 19rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero .wrapper .left .image {
+    position: absolute;
+    bottom: 0;
+    right: -2rem;
+    max-width: 30rem;
+  }
+
+  .hero .wrapper .left .image .label.gray {
+    left: 0;
+    bottom: 4rem;
+  }
+
+  .hero .wrapper .right {
+    min-width: 42.5rem;
+  }
+
+  .battle .participants .wrapper {
+    padding: 1.5rem;
+  }
+
+  .battle .participants .vs {
+    margin-inline: 1.5rem;
+  }
+
+  .battle .rewards img {
+    height: 7.5rem;
+  }
+
+  .sorting select {
+    height: 5rem;
+    min-width: 12rem;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer .links a {
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .logo {
+    padding: 1.3rem 1.2rem;
+  }
+
+  .logo .desktop {
+    display: none;
+  }
+
+  .logo .mobile {
+    display: block;
+  }
+
+  .header .navigations {
+    gap: 2.5rem;
+  }
+
+  .hero .wrapper .left .contents h1 {
+    font-size: 3.6rem;
+  }
+
+  .featured-boxes-header .tabs {
+    order: 2;
+  }
+
+  .battle {
+    gap: 2rem;
+  }
+
+  .battle .participants .wrapper {
+    padding: 1rem;
+  }
+
+  .battle .participants {
+    padding: 1.4rem;
+    padding-right: 0;
+  }
+
+  .battle .rewards img {
+    height: 6rem;
+  }
+
+  .battle .actions .button {
+    min-width: 9.8rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header .navigations {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    background: linear-gradient(180deg, #7848ff 0%, #6254ff 100%);
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 1s;
+    z-index: 999;
+  }
+
+  .mobile-menu-active .header .navigations {
+    transform: translateX(0);
+  }
+
+  .header .ellipsis {
+    display: block;
+  }
+
+  .header .navigations a img {
+    filter: brightness(3);
+  }
+
+  .header .navigations a:hover img {
+    filter: brightness(4);
+  }
+
+  .battle {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    padding: 0.8rem;
+  }
+
+  .battle .rewards-container {
+    width: 100%;
+    order: -1;
+  }
+
+  .battle .participants {
+    padding: 0;
+  }
+
+  .battle .actions {
+    padding-right: 0;
+  }
+
+  .testimonials-wrapper .testimonial {
+    min-width: 30.6rem;
+    padding-bottom: 4.2rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .content-area {
+    max-width: calc(100% - 9rem);
+  }
+
+  .chat-window {
+    position: fixed;
+    right: 0;
+    transform: translateY(-100vh);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 1s;
+    z-index: 5;
+  }
+
+  .chat-window-active .chat-window {
+    transform: translateY(0);
+  }
+
+  .footer {
+    padding: 1.2rem;
+    padding-top: 1.8rem;
+    margin: 0 -1.2rem;
+  }
+
+  .footer .ratings img {
+    margin-right: 0.25rem;
+  }
+
+  .footer .social-handles img {
+    height: 3.2rem;
+    width: 3.2rem;
+    object-fit: contain;
+  }
+
+  .footer .links {
+    order: 3;
+  }
+
+  .footer .links a {
+    font-size: 1.4rem;
+    margin-top: 2.3rem;
+    margin-right: 2.3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content-area {
+    max-width: unset;
+  }
+
+  .boxes-wrapper .box {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header .area-right {
+    gap: 0.4rem;
+    padding: 0.9rem;
+  }
+
+  .app {
+    padding-top: 5.4rem;
+  }
+
+  .header button,
+  .header .button,
+  .header .button.gradient {
+    height: 3.6rem;
+    font-size: 1.4rem;
+  }
+
+  .header .ellipsis,
+  .button.chat-window-trigger {
+    height: 3.6rem;
+    width: 3.6rem;
+    padding: 0;
+  }
+
+  .chat-window {
+    top: 5.4rem;
+  }
+
+  .live-drops .title {
+    display: none;
+  }
+
+  .live-drops {
+    border-radius: 0.8rem;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero {
+    margin-bottom: 1.6rem;
+  }
+
+  .hero .wrapper .left {
+    min-width: 35rem;
+  }
+
+  .hero .wrapper .left .contents,
+  .hero .wrapper .right .contents {
+    padding: 1.2rem;
+  }
+
+  .hero .wrapper .left .contents h1,
+  .hero .wrapper .right .contents h2 {
+    font-size: 2.4rem;
+    line-height: 1.25;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero .wrapper .left .contents p {
+    max-width: 17rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero .wrapper .left .image {
+    max-width: 20.04rem;
+  }
+
+  .hero .wrapper .left .image .label.gray {
+    left: 1rem;
+    bottom: 5rem;
+    height: 2rem;
+    width: 4rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding: 0;
+    text-align: center;
+    z-index: 2;
+  }
+
+  .hero .wrapper .left .image .label.lime {
+    bottom: 4.5rem;
+    right: 2rem;
+    height: 2rem;
+    width: 3.8rem;
+    font-size: 1.3rem;
+    padding: 0;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  .hero .wrapper .right {
+    min-width: 30rem;
+  }
+
+  .hero .wrapper .right .contents h2::before {
+    right: 0;
+  }
+
+  .hero .wrapper .right .image {
+    align-items: center;
+    padding-inline: 1.2rem;
+  }
+
+  .hero .wrapper .right .image img {
+    width: 38%;
+  }
+
+  .hero .wrapper .right .image .refer {
+    position: static;
+    transform: unset;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .hero .wrapper .left .contents .button {
+    height: 4.8rem;
+    font-size: 1.4rem;
+  }
+
+  .header .area-right .trigger.lang .button {
+    width: 7.1rem;
+    padding: 0;
+  }
+
+  .header .area-right .trigger.currency {
+    display: none;
+  }
+
+  .header .area-right .button.auth {
+    width: 11.4rem;
+    padding: 0;
+  }
+
+  .live-drops ul {
+    margin-bottom: 0;
+  }
+
+  .live-drops .drop {
+    max-width: 13.9rem;
+  }
+
+  .section .title h2 {
+    font-size: 1.5rem;
+  }
+
+  .section .title .button {
+    height: 3.9rem;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    padding: 0 1.1rem;
+  }
+
+  .sorting {
+    padding-inline: 1.2rem;
+  }
+
+  .sorting,
+  .sorting select {
+    height: 4rem;
+    min-width: 7.2rem;
+    font-size: 1.2rem;
+  }
+
+  .featured-boxes-header {
+    margin-bottom: 1.6rem;
+  }
+
+  .featured-boxes-header .tabs .tab {
+    height: 3.4rem;
+    font-size: 1.2rem;
+    min-width: 8.3rem;
+    padding: 0;
+  }
+
+  .boxes-wrapper .card .categories {
+    top: 0.4rem;
+    left: 0.4rem;
+  }
+
+  .boxes-wrapper .card .categories .cat {
+    height: 2.3rem;
+    line-height: 2.3rem;
+    font-size: 1rem;
+  }
+
+  .boxes-wrapper .card .card-image {
+    min-height: 10rem;
+    padding-top: 2.7rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .boxes-wrapper .card .card-image img {
+    height: 10rem;
+  }
+
+  .boxes-wrapper .card .card-body h2 {
+    font-size: 1.2rem;
+  }
+
+  .boxes-wrapper .card .card-body .tags {
+    margin-bottom: 0.4rem;
+  }
+
+  .boxes-wrapper .card .card-body .tags .tag {
+    font-size: 1.2rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    padding: 0 0.4rem;
+  }
+
+  .boxes-wrapper .card .card-body {
+    padding: 0.4rem;
+  }
+
+  .boxes-wrapper .card .card-body .price {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .boxes-wrapper .card .card-body .buttons {
+    gap: 0.4rem;
+  }
+
+  .boxes-wrapper .card .card-body .buttons .button {
+    height: 3.6rem;
+    font-size: 1.4rem;
+    padding: 0;
+  }
+
+  .boxes-wrapper .card .card-body .buttons .button.gradient {
+    width: 9.8rem;
+  }
+
+  .boxes-wrapper .card .card-body .buttons .button.transparent {
+    width: 6.1rem;
+  }
+
+  .latest-battles {
+    margin-bottom: 1.6rem;
+  }
+
+  .latest-battles-boxes-header {
+    margin-bottom: 1.2rem;
+  }
+
+  .battle .rewards {
+    gap: 1.2rem;
+  }
+
+  .battle .rewards img {
+    height: 4.6rem;
+  }
+
+  .battle .actions {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+  }
+
+  .battle .actions .price {
+    margin-bottom: 0;
+  }
+
+  .battle .participants {
+    width: auto;
+  }
+
+  .battle .participants .wrapper {
+    padding: 0.4rem;
+  }
+
+  .battle .participants .group img,
+  .battle .participants .opponent-group img {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  .battle .participants .vs {
+    height: 1.6rem;
+    width: 1.6rem;
+    object-fit: contain;
+    margin-inline: 0.8rem;
+  }
+
+  .battle .actions .price {
+    font-size: 1.5rem;
+  }
+
+  .battle .actions .button {
+    height: 3.6rem;
+    font-size: 1.4rem;
+  }
+
+  .fresh-deliveries-header {
+    gap: 0.8rem;
+    margin-bottom: 0.6rem;
+    padding-right: 0;
+  }
+
+  .fresh-deliveries-header .caption {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .testimonials-wrapper .testimonial article {
+    padding: 1.2rem;
+  }
+
+  .testimonials-wrapper .testimonial .image-box {
+    margin-bottom: 1.6rem;
+  }
+
+  .testimonials-wrapper .testimonial .image-box .name {
+    font-size: 1.5rem;
+  }
+
+  .testimonials-wrapper .testimonial .image-box .username,
+  .testimonials-wrapper .testimonial .image-box .posted-on p,
+  .testimonials-wrapper .testimonial .contents p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  .testimonials-wrapper .testimonial .contents p {
+    margin-bottom: 1.6rem;
+  }
+
+  .testimonials-wrapper .testimonial .contents .images {
+    margin-bottom: 1.2rem;
+  }
+
+  .testimonials-wrapper .testimonial .contents .ratings img {
+    height: 2.6rem;
+    object-fit: contain;
   }
 }
